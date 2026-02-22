@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Janmesh Sharma | Data Scientist Portfolio</title>
+
+<style>
+:root {
+    --bg-color: #000000;
+    --accent-color: #00ff41;
+    --text-color: #e0e0e0;
+    --card-bg: #0a0a0a;
+    --border-style: 1px solid #00ff41;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 650px;
+    width: 100%;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+h1 {
+    color: var(--accent-color);
+    margin-bottom: 0.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.tagline {
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #333;
+    padding-bottom: 1rem;
+}
+
+.link-box {
+    display: block;
+    background: var(--card-bg);
+    border: var(--border-style);
+    color: var(--accent-color);
+    padding: 1.2rem;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.link-box:hover {
+    background: var(--accent-color);
+    color: #000;
+    box-shadow: 0 0 20px rgba(0, 255, 65, 0.4);
+}
+
+.section-content {
+    display: none;
+    background: #050505;
+    padding: 1.5rem;
+    border-left: 3px solid var(--accent-color);
+    margin-bottom: 2rem;
+    animation: fadeIn 0.4s ease;
+    font-size: 0.95rem;
+}
+
+.section-content ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.section-content li {
+    margin-bottom: 0.8rem;
+    padding-left: 1.2rem;
+    position: relative;
+}
+
+.section-content li::before {
+    content: ">";
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+}
+
+/* Section Citation Style */
+.section-citation {
+    margin-top: 1.5rem;
+    text-align: right;
+    color: var(--accent-color);
+    font-size: 0.85rem;
+    opacity: 0.85;
+}
+
+.section-citation::before {
+    content: "Sources → ";
+    color: #666;
+}
+
+footer {
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #666;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+<h1>Janmesh Sharma</h1>
+<div class="tagline">Data Scientist | 8th Semester ECE | Patil-I-Labs Intern</div>
+</header>
+
+<!-- ABOUT -->
+<div class="link-box" onclick="toggleSection('about')">01_About_Me</div>
+<div id="about" class="section-content">
+            <p>I am currently in my 8th semester of Electronics & Communication Engineering at Gati Shakti Vishwavidyalaya, with a strong focus on data systems, machine learning, and scalable architecture design.</p>
+            <p>As an intern at <span class="highlight">Patil-I-Labs</span>, I work on AI-driven solutions and structured data workflows that transform complex, unstructured datasets into actionable intelligence.</p>
+            <p>My experience spans predictive modeling, automated ETL pipelines, LLM-powered conversational systems, and industrial time-series forecasting. I approach every challenge with a systems mindset — optimizing for scalability, reliability, and measurable impact.</p>
+            <p><i>"I believe data is not just numbers — it is behavior, patterns, and decisions waiting to be engineered properly."</i></p>
+
+<div class="section-citation">[cite: 1, 2]</div>
+</div>
+
+<!-- SKILLS -->
+
+        <div class="link-box" onclick="toggleSection('skills')">02_Technical_Skills</div>
+        <div id="skills" class="section-content">
+            <ul>
+                <li><strong>Languages:</strong> Python, SQL, C++, C</li>
+                <li><strong>Data Visualization:</strong> Tableau, Power BI, Excel</li>
+                <li><strong>Libraries:</strong> Pandas, NumPy, scikit-learn, LangChain, Statsmodels</li>
+              <li><strong>Frameworks:</strong> Tensorflow, Pytorch.</li>
+                <li><strong>Core Expertise:</strong> ETL Automation, Dashboard Development, Predictive Modeling, and Data Warehousing</li>
+            </ul>
+
+<div class="section-citation">[cite: 6, 48]</div>
+</div>
+
+<!-- EXPERIENCE -->
+<div class="link-box" onclick="toggleSection('experience')">03_Work_Experience</div>
+        <div id="experience" class="section-content">
+            <p><strong>Centre for Railway Information Systems (CRIS)</strong><br>
+            <i>AI Intern</i></p>
+            <ul>
+                <li>Engineered an LLM-based chatbot using LangChain and MySQL to automate large-scale record queries.</li>
+                <li>Developed ARIMA models for wheel life prediction to optimize industrial maintenance schedules.</li>
+            </ul>
+
+            <p><strong>Divisional Railway Manager Office (DRM)</strong><br>
+            <i>Summer Intern</i></p>
+            <ul>
+                <li>Built automated dashboards to visualize failure trends across telecom assets.</li>
+                <li>Conducted data validation and trend analysis on S&T failure datasets.</li>
+            </ul>
+
+<div class="section-citation">[cite: 12, 19]</div>
+</div>
+
+<!-- PROJECTS -->
+<div class="link-box" onclick="toggleSection('projects')">04_Key_Projects</div>
+        <div id="projects" class="section-content">
+            <ul>
+                <li><strong>AI-Driven Logistics Optimization:</strong> GenAI platform for transport mode recommendations using LangGraph and real-time data.</li>
+                <li><strong>Data Warehousing:</strong> Multi-layer SQL Server architecture (Bronze, Silver, Gold) with automated ETL.</li>
+                <li><strong>Deepfake Voice Detection:</strong> Machine learning system utilizing spectral feature extraction for audio classification.</li>
+                <li><strong>Fraud Detection:</strong> Supervised learning model for identifying fraudulent financial transactions.</li>
+            </ul>
+
+<div class="section-citation">[cite: 21, 34]</div>
+</div>
+<a href="Janmesh_Resume.pdf" class="link-box">05_Download_Resume</a>
+
+        <div class="link-box" onclick="toggleSection('contact')">06_Contact_Me</div>
+        <div id="contact" class="section-content">
+            <form action="https://formspree.io/f/xkovqdyw" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Enter your message regarding data systems, AI projects, or collaborations..." required></textarea>
+                <button type="submit" class="submit-btn">Transmit Message</button>
+            </form>
+            <p style="margin-top:1.5rem; text-align: center;">
+                <span class="highlight">Email:</span> janmesh025@gmail.com<br>
+                <span class="highlight">Network:</span> linkedin.com/in/janmeshsharma25
+            </p>
+        </div>
+
+        <footer>
+            &copy; 2026 JANMESH SHARMA // SYSTEM_STATUS: ONLINE
+        </footer>
+    </div>
+
+    <script>
+        function toggleSection(id) {
+            const sections = document.querySelectorAll('.section-content');
+            sections.forEach(s => {
+                if(s.id === id) {
+                    s.style.display = (s.style.display === 'block' ? 'none' : 'block');
+                } else {
+                    s.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
